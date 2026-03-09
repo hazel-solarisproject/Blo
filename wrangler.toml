@@ -1,0 +1,11 @@
+name = "roblox-tracker"
+main = "index.ts"
+compatibility_date = "2024-03-01"
+[durable_objects]
+bindings = [
+  { name = "SERVER_TRACKER", class_name = "ServerTracker" }
+]
+[[migrations]]
+tag = "v1"
+new_classes = ["ServerTracker"]
+
